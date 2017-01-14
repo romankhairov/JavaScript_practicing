@@ -5,6 +5,7 @@
 // multyply to 2 is for definetly picking 0 or 1
 var fighting = true;
 var yourPunch = Math.floor(Math.random()*2);
+var rivalBlock = Math.floor(Math.random()*2);
 var damageToRival = Math.floor(Math.random()*2 + 1);
 var totalDamage= 0;
 
@@ -13,11 +14,19 @@ while (fighting) {
     if (yourPunch) {
         console.log("You hit your rival!");
         totalDamage += damageToRival;
+        if (rivalBlock) {
+        	rivalBlock === 0
+        	totalDamage = totalDamage + 1;
+        } else {
+        	totalDamage = totalDamage + 0;
+        	console.log("Rival blocked your hit")
+        }
         if (totalDamage >= 3) {
             console.log("You win!!! Congratulations");
             fighting = false; 
             } else { 
                 yourPunch = Math.floor(Math.random()*2);
+                console.log("Your punch was too weak")
             } 
     } else {
         console.log("You were defeated by your rival... Try next time.");
@@ -26,7 +35,6 @@ while (fighting) {
         fighting = false;
     }
 }
-
 
 
 
