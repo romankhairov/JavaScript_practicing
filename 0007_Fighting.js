@@ -19,14 +19,14 @@ while (fighting) {
         	totalDamage = totalDamage + 1;
         } else {
         	totalDamage = totalDamage + 0;
-        	console.log("Rival blocked your hit")
+        	console.log("Rival blocked your hit");
         }
         if (totalDamage >= 3) {
             console.log("You win!!! Congratulations");
             fighting = false; 
             } else { 
                 yourPunch = Math.floor(Math.random()*2);
-                console.log("Your punch was too weak")
+                console.log("Your punch was too weak");
             } 
     } else {
         console.log("You were defeated by your rival... Try next time.");
