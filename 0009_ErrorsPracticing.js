@@ -15,3 +15,16 @@ try {
 } finally {
 
 }
+
+//Test custom error with Not a Number
+var testCalculate = function(number) {
+  if ( number % 5 === 0) {
+      return true;
+  } else if (isNaN(number)) {
+      throw new Error ("Put a number into your function");
+  }
+  else {
+      return false;
+  }
+};
+testCalculate("a");
