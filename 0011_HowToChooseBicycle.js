@@ -1,3 +1,4 @@
+//here we are checking user height for choosing frame, that would be perfect fit for using
 var height = prompt ("Hello! Here is a program, that will help you to choose a bike. Enter your height in centimeters:");
 
 switch(height) {
@@ -19,3 +20,20 @@ switch(height) {
     default:
         console.log('Bicycle frame 24" is for you');
       }
+
+//here we are checking preferences of user
+var typeOfBicycle = prompt("What do you prefer more: SPEED, COMFORT, OFF ROAD?").toUpperCase();
+  switch (typeOfBicycle) {
+    case "SPEED":
+      
+
+      break;
+    case "COMFORT":
+
+      break;
+    case "OFF ROAD":
+
+      break;
+    default:
+
+  }
