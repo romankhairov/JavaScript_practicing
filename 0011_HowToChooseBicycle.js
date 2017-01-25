@@ -25,8 +25,13 @@ switch(height) {
 var typeOfBicycle = prompt("What do you prefer more: SPEED, COMFORT, OFF ROAD?").toUpperCase();
   switch (typeOfBicycle) {
     case "SPEED":
-      
-
+    var speedA = prompt ("Let's check, does its quality plus or con for you? Very fast: does it + or - for you?");
+    var speedA1;
+      if (speedA === "+") {
+        speedA1 = 1
+      } else {
+        speedA1 = 0
+      }            
       break;
     case "COMFORT":
 
