@@ -25,13 +25,30 @@ switch(height) {
 var typeOfBicycle = prompt("What do you prefer more: SPEED, COMFORT, OFF ROAD?").toUpperCase();
   switch (typeOfBicycle) {
     case "SPEED":
-    var speedA = prompt ("Let's check, does its quality plus or con for you? Very fast: does it + or - for you?");
-    var speedA1;
-      if (speedA === "+") {
-        speedA1 = 1
-      } else {
-        speedA1 = 0
-      }            
+        var speedA = prompt ("Let's check, does its quality plus or con for you? Very fast: does it + or - for you?");
+        var speedA1;
+        var speedSumm;
+          if (speedA === "+") {
+            speedA1 = 1
+          } else {
+            speedA1 = 0
+          }
+        var speedB = prompt ("Very light and looks cool: does it + or - for you?");
+        var speedB1;
+        var speedSumm;
+          if (speedB === "+") {
+            speedB1 = 1
+          } else {
+            speedB1 = 0
+          }
+        speedSumm = speedA1 + speedB1;
+
+        if (speedSumm >= 1) {
+          console.log("This bicycle fits for you");
+        } else {
+          console.log("Think about some other bicycle");
+        }
+                 
       break;
     case "COMFORT":
 
