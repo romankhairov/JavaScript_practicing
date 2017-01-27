@@ -45,37 +45,37 @@ var typeOfBicycle = prompt("Hello! Here is a program, that will help you to choo
       break;
 
     case "COMFORT":
-        var speedA = prompt ("Let's check, does its quality plus or con for you? Extremely comfortable seat : does it + or - for you?");
-        var speedA1;
-        var speedSumm;
-          if (speedA === "+") {
-            speedA1 = 1
+        var comfortA = prompt ("Let's check, does its quality plus or con for you? Extremely comfortable seat: does it + or - for you?");
+        var comfortA1;
+        var comfortSumm;
+          if (comfortA === "+") {
+            comfortA1 = 1
           } else {
-            speedA1 = 0
+            comfortA1 = 0
           }
-        var speedB = prompt ("Original design, style: does it + or - for you?");
-        var speedB1;
-        var speedSumm;
-          if (speedB === "+") {
-            speedB1 = 1
+        var comfortB = prompt ("Original design, style: does it + or - for you?");
+        var comfortB1;
+        var comfortSumm;
+          if (comfortB === "+") {
+            comfortB1 = 1
           } else {
-            speedB1 = 0
+            comfortB1 = 0
           }
-        var speedC = prompt ("Low speed: does it + or - for you?");
-        var speedC1;
-        var speedSumm;
-          if (speedC === "+") {
-            speedC1 = 1
+        var comfortC = prompt ("Low speed: does it + or - for you?");
+        var comfortC1;
+        var comfortSumm;
+          if (comfortC === "+") {
+            comfortC1 = 1
           } else {
-            speedC1 = 0
+            comfortC1 = 0
           }
-        var speedD = prompt ("Hard to use on hilly terrain and long (more than 20 km) trips : does it + or - for you?");
-        var speedD1;
-        var speedSumm;
-          if (speedD === "+") {
-            speedD1 = 1
+        var comfortD = prompt ("Hard to use on hilly terrain and long (more than 20 km) trips: does it + or - for you?");
+        var comfortD1;
+        var comfortSumm;
+          if (comfortD === "+") {
+            comfortD1 = 1
           } else {
-            speedD1 = 0
+            comfortD1 = 0
           }
 
         speedSumm = speedA1 + speedB1 + speedC1 + speedD1;
@@ -88,11 +88,51 @@ var typeOfBicycle = prompt("Hello! Here is a program, that will help you to choo
           break;
 
     case "OFF ROAD":
+        var offRoadA = prompt ("Let's check, does its quality plus or con for you? Versatile and unpretentious: does it + or - for you?");
+        var offRoadA1;
+        var offRoadSumm;
+          if (offRoadA === "+") {
+            offRoadA1 = 1
+          } else {
+            offRoadA1 = 0
+          }
+        var offRoadB = prompt ("A wide range of accessories: does it + or - for you?");
+        var offRoadB1;
+        var offRoadSumm;
+          if (offRoadB === "+") {
+            offRoadB1 = 1
+          } else {
+            offRoadB1 = 0
+          }
+        var offRoadC = prompt ("The relatively large weight (12-15 kg), compared with road bikes and some city-bikes: does it + or - for you?");
+        var offRoadC1;
+        var offRoadSumm;
+          if (offRoadC === "+") {
+            offRoadC1 = 1
+          } else {
+            offRoadC1 = 0
+          }
+        var offRoadD = prompt ("Sport fit and type of mountain bike components are focused on primarily on the fitness / sport rather than comfort or transport: does it + or - for you?");
+        var offRoadD1;
+        var offRoadSumm;
+          if (offRoadD === "+") {
+            offRoadD1 = 1
+          } else {
+            offRoadD1 = 0
+          }
 
-      break;
-    default:
+        speedSumm = speedA1 + speedB1 + speedC1 + speedD1;
 
-  }
+        if (speedSumm >= 1) {
+          console.log("Cruiser bicycle is good for you");
+        } else {
+          console.log("Think about some other type of bicycle");
+        }
+          break;
+          break;
+        default:
+
+      }
 
 //here we are checking user height for choosing frame, that would be perfect fit for using
 var height = prompt ("Enter your height in centimeters:");
