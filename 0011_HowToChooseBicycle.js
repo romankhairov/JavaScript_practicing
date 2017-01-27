@@ -42,11 +42,51 @@ var typeOfBicycle = prompt("Hello! Here is a program, that will help you to choo
         } else {
           console.log("Think about some other type of bicycle");
         }
-
       break;
+
     case "COMFORT":
+        var speedA = prompt ("Let's check, does its quality plus or con for you? Extremely comfortable seat : does it + or - for you?");
+        var speedA1;
+        var speedSumm;
+          if (speedA === "+") {
+            speedA1 = 1
+          } else {
+            speedA1 = 0
+          }
+        var speedB = prompt ("Original design, style: does it + or - for you?");
+        var speedB1;
+        var speedSumm;
+          if (speedB === "+") {
+            speedB1 = 1
+          } else {
+            speedB1 = 0
+          }
+        var speedC = prompt ("Low speed: does it + or - for you?");
+        var speedC1;
+        var speedSumm;
+          if (speedC === "+") {
+            speedC1 = 1
+          } else {
+            speedC1 = 0
+          }
+        var speedD = prompt ("Hard to use on hilly terrain and long (more than 20 km) trips : does it + or - for you?");
+        var speedD1;
+        var speedSumm;
+          if (speedD === "+") {
+            speedD1 = 1
+          } else {
+            speedD1 = 0
+          }
 
-      break;
+        speedSumm = speedA1 + speedB1 + speedC1 + speedD1;
+
+        if (speedSumm >= 1) {
+          console.log("Cruiser bicycle is good for you");
+        } else {
+          console.log("Think about some other type of bicycle");
+        }
+          break;
+
     case "OFF ROAD":
 
       break;
