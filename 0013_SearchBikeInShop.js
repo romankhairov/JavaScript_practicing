@@ -1,33 +1,43 @@
 var bike = {};
     bike.cross= {
-        manufacturer: ["Cossack", "Giant", "Merida", "Romet", "Saven"],
-        frameSize: "",
-        countryOfOrigin: [],
-        wheelsSize
+        type: "Cross",
+        name: "CROSSWAY 900",
+        frame: "ALU / Crossway TFS-D-Single",
+        gear: "30 Shimano CS-HG81-10 11-34",
+        weight: "12.2",
+        wheelSize: "700C",
     };
     bike.mtb= {
-        manufacturer: ["Cossack", "Giant", "Merida", "Romet", "Saven"],
-        frameSize: "",
-        countryOfOrigin: [],
-        wheelsSize
+        type: "MTB",
+        name: "aa",
+        frame: "aa",
+        gear: "",
+        weight: "",
+        wheelSize: "aa",
     };
     bike.track= {
-        manufacturer: "",
-        frameSize: "",
-        countryOfOrigin: [],
-        wheelsSize
+        type: "Track",
+        name: "aa",
+        frame: "aa",
+        gear: "",
+        weight: "",
+        wheelSize: "aa",
     };
     bike.city= {
-        manufacturer: "",
-        frameSize: "",
-        countryOfOrigin: [],
-        wheelsSize
+        type: "City",
+        name: "aa",
+        frame: ["Poland"],
+        gear: "",
+        weight: "",
+        wheelSize: "aa",
     };
     bike.junior= {
-        manufacturer: "",
-        frameSize: "",
-        countryOfOrigin: [],
-        wheelsSize
+        type: "Junior",
+        name: "aa",
+        frame: "aa",
+        gear: "",
+        weight: "",
+        wheelSize: "aa",
     };
 
 
@@ -39,11 +49,11 @@ var list = function(obj) {
 
 var search = function(name) {
     for (var key in bike) {
-        if (bike[key].manufacturer === name) {
+        if (bike[key].type === name) {
             console.log(bike[key]);
             return bike[key];
         }
     }
 };
 list(bike);
-search("Merida");
+search("1254");
