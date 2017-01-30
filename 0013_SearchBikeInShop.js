@@ -1,6 +1,6 @@
 var bike = {};
     bike.cross= {
-        type: "Cross",
+        type: "CROSS",
         name: "CROSSWAY 900",
         frame: "ALU / Crossway TFS-D-Single",
         gear: "30 Shimano CS-HG81-10 11-34",
@@ -16,7 +16,7 @@ var bike = {};
         wheelSize: "29 inch",
     };
     bike.track= {
-        type: "Track",
+        type: "TRACK",
         name: "SCULTURA SUPERLITE LTD",
         frame: "CARBON / Scultura CF5 superlite MC",
         gear: "22 Sram Red 22 -sc",
@@ -24,20 +24,20 @@ var bike = {};
         wheelSize: "700C",
     };
     bike.city= {
-        type: "City",
-        name: "aa",
-        frame: ["Poland"],
-        gear: "",
-        weight: "",
-        wheelSize: "aa",
+        type: "CITY",
+        name: "CITYWAY 728 ",
+        frame: "ALU / City",
+        gear: "7 Shimano NEXUS 7S",
+        weight: "16.5",
+        wheelSize: "28 inch",
     };
     bike.junior= {
-        type: "Junior",
-        name: "aa",
-        frame: "aa",
-        gear: "",
-        weight: "",
-        wheelSize: "aa",
+        type: "JUNIOR",
+        name: "MATTS J24 TEAM-MD",
+        frame: "ALU / M24 lite disc",
+        gear: "8 Shimano Acera-X 8",
+        weight: "13.4",
+        wheelSize: "24 inch",
     };
 
 
@@ -55,5 +55,4 @@ var search = function(name) {
         }
     }
 };
-list(bike);
-search("1254");
+search(("Mtb").toUpperCase());
