@@ -9,19 +9,19 @@ var bike = {};
     };
     bike.mtb= {
         type: "MTB",
-        name: "aa",
-        frame: "aa",
-        gear: "",
-        weight: "",
-        wheelSize: "aa",
+        name: "NINETY-SIX 9.TEAM",
+        frame: "CARBON / Ninety-Six CF5",
+        gear: "12 Sram XX1 12s",
+        weight: "10",
+        wheelSize: "29 inch",
     };
     bike.track= {
         type: "Track",
-        name: "aa",
-        frame: "aa",
-        gear: "",
-        weight: "",
-        wheelSize: "aa",
+        name: "SCULTURA SUPERLITE LTD",
+        frame: "CARBON / Scultura CF5 superlite MC",
+        gear: "22 Sram Red 22 -sc",
+        weight: "4.5",
+        wheelSize: "700C",
     };
     bike.city= {
         type: "City",
