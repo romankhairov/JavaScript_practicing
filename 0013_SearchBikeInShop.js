@@ -41,18 +41,20 @@ var bike = {};
     };
 
 
-var list = function(obj) {
+/*var list = function(obj) {
     for (var key in obj) {
         console.log(key);
     }
-};
+};*/
 
 var search = function(name) {
     for (var key in bike) {
         if (bike[key].type === name) {
             console.log(bike[key]);
             return bike[key];
+        } else {
+          console.log("Choose the right name: Cross, MTB, Track, City, Junior");
         }
     }
 };
-search(("Mtb").toUpperCase());
+search(("Mtt").toUpperCase());
