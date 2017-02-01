@@ -47,7 +47,7 @@ var list = function(obj) {
     }
 };
 
-var search = function(name) {
+/*var search = function(name) {
     for (var key in bike) {
         if (bike[key].type === name) {
             console.log(bike[key]);
@@ -55,4 +55,15 @@ var search = function(name) {
         }
     }
 };
-search(("Mtb").toUpperCase());
+search(("Mtb").toUpperCase());*/
+
+function showProps(obj, objName) {
+  var result = "";
+  for (var i in obj) {
+    // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
+    if (obj.hasOwnProperty(i)) {
+      result += objName + "." + i + " = " + obj[i] + "\n";
+    }
+  }
+  return result;
+}
