@@ -9,10 +9,11 @@ roadTime.setTime = function (newTimeBus52, newTimeTram) {
   roadTime.tram = newTimeTram;
 };
 
+roadTime.setTime(10,15);
+
 roadTime.getTotalTime = function () {
   return (roadTime.walk + roadTime.bus52 + roadTime.tram + roadTime.bus62);
 };
 
 
-getTotalTime(10,15);
 console.log(roadTime.getTotalTime());
