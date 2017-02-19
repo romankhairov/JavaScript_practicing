@@ -1,4 +1,4 @@
-var cristianoRonaldo = {
+/*var cristianoRonaldo = {
     name: "Cristiano Ronaldo",
     position: "LW",
     preferedFoot: "Right",
@@ -11,9 +11,9 @@ var cristianoRonaldo = {
     dribbling: 91,
     defending: 33,
     physical: 80,
-}
+}*/
 
-var lionelMessi = {
+/*var lionelMessi = {
     name: "Lionel Messi",
     position: "RW",
     preferedFoot: "Left",
@@ -26,9 +26,9 @@ var lionelMessi = {
     dribbling: 96,
     defending: 26,
     physical: 61,
-}
+}*/
 
-var neymar = {
+/*var neymar = {
     name: "Neymar da Silva Santos Jr.",
     position: "LW",
     preferedFoot: "Right",
@@ -41,4 +41,23 @@ var neymar = {
     dribbling: 95,
     defending: 30,
     physical: 56,
+}*/
+
+function player(name, pos, foot, weakfoot, moves, overall, pac, sho, pas, dri, def, phy) {
+    this.name = name;
+    this.position = pos;
+    this.preferedFoot = foot;
+    this.weakFoot = weakfoot;
+    this.skillMoves = moves;
+    this.overall = overall;
+    this.pace = pac;
+    this.shooting = sho;
+    this.passing = pas;
+    this.dribbling = dri;
+    this.defending = def;
+    this.physical = phy;
 }
+
+var cristianoRonaldo = new player("Cristiano Ronaldo", "LW", "Right", 4, 5, 94, 92, 92, 81, 91, 33, 80);
+var lionelMessi = new player("Lionel Messi", "RW", "Left", 4, 4, 93, 89, 90, 86, 96, 26, 61);
+var neymar = new player("Neymar da Silva Santos Jr.", "LW", "Right", 5, 5, 92, 91, 84, 78, 95, 30, 56);
