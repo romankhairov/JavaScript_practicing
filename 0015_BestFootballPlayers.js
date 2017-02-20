@@ -58,6 +58,25 @@ function player(name, pos, foot, weakfoot, moves, overall, pac, sho, pas, dri, d
     this.physical = phy;
 }
 
+function goalkeeper(name, save, foot, weakfoot, moves, overall, div, han, kic, ref, spd, pos) {
+    this.name = name;
+    this.saveTechnique = save;
+    this.preferedFoot = foot;
+    this.weakFoot = weakfoot;
+    this.skillMoves = moves;
+    this.overall = overall;
+    this.diving = div;
+    this.handling = han;
+    this.kicking = kic;
+    this.reflexes = ref;
+    this.speed = spd;
+    this.position = pos;
+}
+
+
 var cristianoRonaldo = new player("Cristiano Ronaldo", "LW", "Right", 4, 5, 94, 92, 92, 81, 91, 33, 80);
 var lionelMessi = new player("Lionel Messi", "RW", "Left", 4, 4, 93, 89, 90, 86, 96, 26, 61);
 var neymar = new player("Neymar da Silva Santos Jr.", "LW", "Right", 5, 5, 92, 91, 84, 78, 95, 30, 56);
+var suarez = new player("Luis Suarez", "ST", "Right", 4, 4, 92, 82, 90, 79, 87, 42, 79)
+
+var neuer = new goalkeeper("Manuel Neuer", "Traditional", "Right", 4, 1, 92, 89, 90, 95, 89, 60, 91)
