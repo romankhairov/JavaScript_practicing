@@ -92,10 +92,10 @@ suarez.nationality = "Uruguay";
 neuer.nationality = "Germany";
 deGea.nationality = "Spain";
 
-Player.prototype.comparisonKick = function(cristianoRonaldo.kic) {
+Player.prototype.comparisonKick = function(cristianoRonaldo.kic, lionelMessi.kic) {
     if (cristianoRonaldo.kic > lionelMessi.kic) {
         console.log(cristianoRonaldo.name + " has better kick");
       } else {
         console.log(lionelMessi.name + " has better kick");
       }
-    }
+    };
