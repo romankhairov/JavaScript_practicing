@@ -85,6 +85,7 @@ var deGea = new Goalkeeper("David De Gea", "Acrobatic", "Right", 3, 1, 90, 88, 8
 var year = new Player("Neymar da Silva Santos Jr.", "LW", "Right", 5, 5, 92, 91, 84, 78, 95, 30, 56);
 
 
+
 cristianoRonaldo.nationality = "Portugal";
 lionelMessi.nationality = "Argentina";
 neymar.nationality = "Brasil";
@@ -99,3 +100,15 @@ Player.prototype.comparisonKick = function(cristianoRonaldo.kic, lionelMessi.kic
         console.log(lionelMessi.name + " has better kick");
       }
     };
+
+
+
+function St (name, overall) {
+    this.name = name;
+    this.overall = overall;
+}
+
+St.prototype = new Player();
+
+var aguero = new St("Sergio Aguero", 89);
+console.log(aguero.passing)
