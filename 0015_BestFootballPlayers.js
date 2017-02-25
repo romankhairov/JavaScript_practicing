@@ -71,6 +71,11 @@ function Goalkeeper(name, save, foot, weakfoot, moves, overall, div, han, kic, r
     this.reflexes = ref;
     this.speed = spd;
     this.position = pos;
+    var priceXBox = 310000;
+
+    var showPriceXBox = function() {
+      return returnPriceXBox;
+    }
 }
 
 
@@ -111,4 +116,4 @@ function St (name, overall) {
 St.prototype = new Player();
 
 var aguero = new St("Sergio Aguero", 89);
-console.log(aguero.passing)
+console.log(aguero.passing);
