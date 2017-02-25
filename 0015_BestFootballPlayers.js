@@ -74,10 +74,19 @@ function Goalkeeper(name, save, foot, weakfoot, moves, overall, div, han, kic, r
     var priceXBox = 310000;
 
     var showPriceXBox = function() {
-      return returnPriceXBox;
-    }
+      return priceXBox;
+    };
+
+    this.returnPriceXBox = function() {
+      return showPriceXBox;
+    };
 }
 
+var kahn = new Goalkeeper("Oliver Kahn", "Standart");
+console.log(kahn.priceXBox);
+var priceXBoxMethod = kahn.returnPriceXBox();
+var price = priceXBoxMethod();
+console.log(price);
 
 var cristianoRonaldo = new Player("Cristiano Ronaldo", "LW", "Right", 4, 5, 94, 92, 92, 81, 91, 33, 80);
 var lionelMessi = new Player("Lionel Messi", "RW", "Left", 4, 4, 93, 89, 90, 86, 96, 26, 61);
