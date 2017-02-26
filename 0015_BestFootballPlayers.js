@@ -117,12 +117,12 @@ deGea.nationality = "Spain";
 
 
 
-function St (name, overall) {
+function Striker (name, overall) {
     this.name = name;
     this.overall = overall;
 }
 
-St.prototype = new Player();
+Striker.prototype = new Player();
 
 var aguero = new St("Sergio Aguero", 89);
 console.log(aguero.passing);
